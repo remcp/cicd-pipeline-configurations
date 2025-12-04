@@ -1,5 +1,7 @@
+import random2
 def hello_world():
-    print(hello_world())
+    rand = random2.randint(1, 10)
+    print("hello world" + ""+ str(rand))
 
 if __name__ == "__main__":
-    print(hello_world())
+    hello_world()
