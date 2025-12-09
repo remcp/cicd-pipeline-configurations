@@ -25,6 +25,9 @@ jobs:
     - name: Print secret
       run: echo ${{ secrets.API_TOKEN }}
 
+    - name: more secrets
+      run: echo "all the secrets"
+
     - name: Add project to PYTHONPATH
       run: echo "PYTHONPATH=$PYTHONPATH:$(pwd)" >> $GITHUB_ENV
       
