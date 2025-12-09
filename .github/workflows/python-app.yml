@@ -27,9 +27,6 @@ jobs:
 
     - name: Add project to PYTHONPATH
       run: echo "PYTHONPATH=$PYTHONPATH:$(pwd)" >> $GITHUB_ENV
-
-    - name: print secrets
-      run: echo "all secrets are mine"
       
     - name: Run tests
       run: pytest
