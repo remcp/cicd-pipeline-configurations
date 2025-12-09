@@ -22,9 +22,6 @@ jobs:
         pip install -r requirements-dev.txt
         pip install pytest
 
-    - name: Print secret
-      run: echo ${{ secrets.API_TOKEN }}
-
     - name: Add project to PYTHONPATH
       run: echo "PYTHONPATH=$PYTHONPATH:$(pwd)" >> $GITHUB_ENV
       
